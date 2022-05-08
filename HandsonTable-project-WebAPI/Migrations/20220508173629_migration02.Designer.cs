@@ -3,6 +3,7 @@ using HandsonTable_project_WebAPI.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -10,9 +11,10 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace HandsonTable_project_WebAPI.Migrations
 {
     [DbContext(typeof(HandsonTableDbContext))]
-    partial class HandsonTableDbContextModelSnapshot : ModelSnapshot
+    [Migration("20220508173629_migration02")]
+    partial class migration02
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
